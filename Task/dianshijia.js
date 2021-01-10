@@ -178,7 +178,7 @@ async function run() {
 function signin() {      
    return new Promise((resolve, reject) =>
      {
-      $.get({url: `${dianshijia_API}/v5/sign/signin?accelerate=0&ext=0&ticket=`, headers: JSON.parse(signheaderVal)}, async(error, response, data) =>
+      $.get({url: `${dianshijia_API}/v7/sign/signin?accelerate=0&ext=0&ticket=`, headers: JSON.parse(signheaderVal)}, async(error, response, data) =>
        {
       if(logs)$.log(`${$.name}, 签到结果: ${data}\n`)
       let result = JSON.parse(data)
